@@ -126,5 +126,17 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: `@slixites/gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`roboto slab\:300,400,400i,500,600,700`],
+        display: 'swap',
+        preconnect: true,
+        attributes: {
+          rel: 'stylesheet preload prefetch',
+          as: 'style',
+        },
+      },
+    },
   ],
 }

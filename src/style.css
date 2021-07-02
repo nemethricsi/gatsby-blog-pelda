@@ -27,7 +27,7 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
+  --fontFamily-sans: 'Roboto Slab', Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
@@ -55,6 +55,7 @@
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
   --color-primary: #005b99;
+  --color-primary: #444;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
@@ -78,9 +79,11 @@ html {
 }
 
 body {
-  font-family: var(--font-body);
+  /* font-family: var(--font-body); */
+  font-family: 'Roboto Slab';
   font-size: var(--fontSize-1);
   color: var(--color-text);
+  background-color: #f2f2f2;
 }
 
 footer {
@@ -330,4 +333,12 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.625;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+  color: #da4453;
 }

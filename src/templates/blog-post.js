@@ -29,10 +29,10 @@ const BlogPostTemplate = ({ data, location }) => {
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr />
+        {/* <hr />
         <footer>
           <Bio />
-        </footer>
+        </footer> */}
       </article>
       <nav className="blog-post-nav">
         <ul
@@ -85,6 +85,9 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        featuredImage {
+          publicURL
+        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
